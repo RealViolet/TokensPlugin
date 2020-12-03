@@ -1,0 +1,61 @@
+CoralTokens:
+  HWID: ""
+  Messages:
+    Check:
+      - "&c%player% has %tokens% tokens"
+    Give:
+      Sender:
+        - "&cYou have given &6&l%player% &c%tokens% tokens."
+      Target:
+        - "&cYou have been given &6&l%tokens% &ctokens."
+    Remove:
+      Sender:
+        - "&cYou have removed &6&l%tokens% &ctokens from %6&l%player%&c."
+    NotEnoughTokens:
+      - "&cYou do not have enough tokens for this. You have %tokens% tokens."
+    Spent:
+      - "&cYou have purchased a &6%item%&c! &cYou now have &6%tokens% &ctokens left!"
+
+Shop:
+  Gui:
+    PlaceholderItem: true
+    Size: 54
+    TokenAmountItem:
+      Enabled: true
+      Slot: 22
+      Item:
+        Name: "&6Tokens"
+        Lore:
+          - ""
+          - "&7You have &6%tokens% &7tokens."
+          - ""
+        Material: "PAPER"
+    Name: "&6&lToken Shop"
+    Items:
+      1:
+        Item:
+          Name: "&6Snowport"
+          Material: "SNOW_BALL"
+          Lore:
+            - ""
+            - "&fClick to purchase a Snowport!"
+            - ""
+            - "&aCost&f: 2 Tokens"
+            - ""
+        Cost: 2
+        Slot: 16
+        Commands:
+          - "/ability give %player% Snowport 1"
+      3:
+        Item:
+          Name: "&6Swapper Axe"
+          Material: "GOLD_AXE"
+          Lore:
+            - ""
+            - "&fClick to purchase a Swapper Axe!"
+            - "&aCost&f: 2 Tokens"
+            - ""
+        Cost: 2
+        Slot: 25
+        Commands:
+          - "/ability give %player% swapperaxe 1"
